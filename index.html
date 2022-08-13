@@ -1,0 +1,123 @@
+<!-- Written by Autumn Arnold -->
+<!-- Date: 7/15/2022 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tiro+Gurmukhi&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h1><i id="header-icon" class="material-icons">polymer</i>Dashboard</h1>
+            </div>
+            <div id="mobile-nav" class="dropDown">
+                <a href="javascript:void(0);" onclick="showMenu()">
+                    <i class="material-icons">menu</i>
+                </a>
+            </div>
+            <div id="menu1">
+                <p><i id="icon" class="material-icons">home</i>Home</p>
+                <p><i id="icon" class="material-icons">account_circle</i>Profile</p>
+                <p><i id="icon" class="material-icons">mail</i>Messages</p>
+                <p><i id="icon" class="material-icons">history</i>History</p>
+                <p><i id="icon" class="material-icons">task</i>Tasks</p>
+                <p><i id="icon" class="material-icons">groups</i>Communities</p>
+            </div>
+            <div id="menu2">
+                <p><i id="icon" class="material-icons">manage_accounts</i>Settings</p>
+                <p><i id="icon" class="material-icons">help</i>Support</p>
+                <p><i id="icon" class="material-icons">lock</i>Privacy</p>
+            </div>
+        </div>
+        <div class="header">
+            <div class="search-bar">
+                <form action="#">
+                    <input type="text" placeholder="" name="search">
+                    <button><i id="icon" class="material-icons">search</i></button>
+                </form>
+            </div>
+            <div class="account-settings">
+                <i id="icon" class="material-icons">notifications</i>
+                <img src="assets/puppies.jpg" />
+                <p>Ayana Moye</p>
+            </div>
+            <div class="profile-hello">
+                <img id="puppies" src="assets/puppies.jpg" />
+                <p>
+                    <small>Hi there,</small><br>
+                    Ayana Moye (@ayanam)
+                </p>
+            </div>
+            <div class="header-actions">
+                <button>New</button>
+                <button>Upload</button>
+                <button>Share</button>
+            </div>
+        </div>
+        <div>
+
+        </div>
+        <div class="main-content">
+            <div class="projects">
+                <div class="project">
+                   <h4>Super Cool Project</h4>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Leo integer malesuada nunc vel risus commodo viverra. Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Porta lorem mollis aliquam ut.</p>
+                </div>
+                <div class="project">
+                    <h4>Impossible App</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Sed arcu non odio euismod lacinia. Interdum posuere lorem ipsum dolor.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ornare arcu dui vivamus arcu felis bibendum ut tristique.</p>
+                </div> 
+                <div class="project">
+                    <h4>Twitter Bot</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        A diam sollicitudin tempor id. Accumsan in nisl nisi scelerisque. 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div> 
+                <div class="project">
+                    <h4>Money Maker</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Pellentesque diam volutpat commodo sed egestas egestas. 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div> 
+                <div class="project">
+                    <h4>Less Cool Project</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Erat velit scelerisque in dictum non.</p>
+                </div> 
+                <div class="project">
+                    <h4>Easy Peasy App</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Aenean euismod elementum nisi quis. Lorem ipsum dolor sit amet, 
+                        consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>  
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js" type="text/javascript"></script>
+</body>
+</html>

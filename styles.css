@@ -1,0 +1,230 @@
+/* Written by Autumn Arnold */
+/* CSS File for Admin Dashboard */
+/* Date Written: 7/15/2022 */
+:root {
+    --sidebar: #334155;
+    --sidebar-text: #ffffff;
+    --background: #1e293b;
+    --header: #475569;
+    --header-text: #ffffff;
+    --header-buttons: #cbd5e1;
+    --header-button-text: #000000;
+    --main-content: #67748b;
+}
+
+
+body {
+    background-color: var(--background);
+    margin: 0;
+    font-family: 'Tiro Gurmukhi', serif;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+/*************** Sidebar Styling *****************/
+.sidebar {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 90px 290px 150px;
+    height: 100vh;
+    color: var(--sidebar-text);
+    background-color: var(--sidebar);
+    padding-left: 25px;
+}
+
+.sidebar p {
+    line-height: 24px;
+}
+
+.sidebar #icon {
+    vertical-align: bottom;
+    margin-right: 10px;
+}
+
+.sidebar #header-icon {
+    margin-right: 10px;
+}
+
+#mobile-nav {
+    display: none;
+}
+
+
+/*************** Header Styling *****************/
+.header {
+    width: 80vw;
+    display: grid;
+    grid-template-rows: 40% 60%;
+    grid-template-columns: 67% 33%;
+    background-color: var(--header);
+    color: var(--header-text);
+}
+
+/*** Search Bar ***/
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 50px;
+}
+
+.search-bar button {
+    background-color: rgba(0, 0, 0, 0.0);
+    border: none;
+}
+
+.search-bar input {
+    width: 45vw;
+    height: 23px;
+    border-radius: 25px;
+    border: none;
+    background-color: var(--header-text);
+}
+
+form {
+    display: flex;
+}
+
+.search-bar #icon {
+    color: var(--header-text);
+    align-items: center;
+}
+
+/*** Greeting ***/
+.profile-hello {
+    padding-left: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.profile-hello p {
+    margin: 0;
+    font-size: 20px;
+}
+
+.profile-hello small {
+    font-size: 12px;
+}
+
+#puppies {
+    border-radius: 50%;
+    height: 70px;
+    width: 84px;
+    margin-right: 10px;
+}
+
+/*** Profile Actions ***/
+.account-settings {
+    display: flex;
+    align-items: center;
+    padding-right: 25px;
+    justify-content: flex-end;
+}
+
+.account-settings img {
+    height: 50px;
+    border-radius: 60px;
+    margin-left: 30px;
+}
+
+.account-settings p {
+    margin-left: 20px;
+}
+
+/*** Profile Actions ***/
+.header-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+.header-actions button {
+    border: none;
+    background-color: var(--header-buttons);
+    color: var(--header-button-text);
+    padding: 15px 32px;
+    font-size: 15px;
+    border-radius: 25px;
+    margin-left: 30px;
+}
+
+/*************** Main Content Styling *****************/
+.main-content {
+    width: 76vw;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    padding: 20px;
+}
+
+.main-content .projects {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 33% 33% 33%;
+    grid-gap: 15px;
+}
+
+.main-content .project {
+    background-color: var(--main-content);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.main-content .project h4 {
+    margin: 0;
+}
+
+
+/*************** Responsive Styling *****************/
+@media only screen and (max-width: 975px) {
+    .header {
+        display: none;
+    }
+
+    .sidebar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 97vw;
+        height: 15vh;
+        color: var(--sidebar-text);
+        background-color: var(--sidebar);
+        padding-left: 25px;
+    }
+
+    #mobile-nav {
+        display: block;
+        margin-right: 5%;
+    }
+
+    #mobile-nav a {
+        text-decoration: none;
+        color: var(--sidebar-text);
+    }
+
+    #menu1, #menu2 {
+        display: none;
+    }
+
+    .main-content {
+        width: 92vw;
+        height: 70vh;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100%;
+        padding: 20px;
+    }
+
+    .main-content .projects {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
